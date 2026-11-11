@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_category_tree_leg" model="ir.ui.view">
+        <field name="name">res.partner.category.tree.leg</field>
+        <field name="model">res.partner.category</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_partner_category_leg" model="ir.actions.act_window">
+        <field name="name">Legacy tags</field>
+        <field name="res_model">res.partner.category</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
