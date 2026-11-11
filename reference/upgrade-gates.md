@@ -26,10 +26,10 @@ in a web browser. The official tags move: a later image can behave differently, 
 | kanban `t-name="kanban-box"` | ok | installs, server logs a deprecation warning | installs silently; the web client source throws `Missing 'card' template.` | same, in `card_arch_parser.js` | install: run; client error: source only, not run in a browser |
 | `<group expand=...>` in a search view | ok | ok | rejected | rejected | run |
 | `name_get()` | exists, deprecated (an override does not feed `display_name`) | gone | gone | gone | run |
-| `_name_search()` override | used by `name_search` | not called (use `_search_display_name`) | not called | not called | run on 17, 18, 19 |
+| `_name_search()` override | used by `name_search` | not called (use `_search_display_name`) | not called | UNVERIFIED (assumed to match 19.0) | run on 17, 18, 19 |
 | `_search(..., access_rights_uid=)` | exists | removed | removed | removed | source |
 | `check_access_rights` / `check_access_rule` | ok | deprecated, works | deprecated, works | removed | run; deprecation text source |
-| `_sql_constraints` | creates the constraint | creates it | **ignored, log warning only** | ignored | run on 17, 18, 19; 20 source |
+| `_sql_constraints` | creates the constraint | creates it | **ignored, log warning only** | warning text in source; not run | run on 17, 18, 19; 20 source |
 | `Model._cr/_uid/_context` | ok | ok | deprecated | deprecated | run (works), source (deprecation) |
 | `odoo.osv.expression` | ok | ok | works with `DeprecationWarning` | package gone | run |
 | `read_group()` | ok | ok | works, deprecated | `read_group([], ['id:count'], ...)` raises `ValueError` | run |
