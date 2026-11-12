@@ -97,4 +97,4 @@ MIT, see `LICENSE`.
 This free sample is the audit and the tests. The paid kit adds the data reconciliation, the code-porting and the
 go/no-go skills, snapshot and compare tools for before/after numbers, 46 gates with pass/fail rules and a smoke-test
 addon, run against real 17.0, 18.0 and 19.0 containers (20.0 in part), with a verification record that lists what was not checked:
-{{POLAR_URL}}
+https://buy.polar.sh/polar_cl_EVsRo3MlFd7yJZXyzo89BYz9Q2QtRWS5GiND429rVdR
